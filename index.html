@@ -1,5 +1,33 @@
 <html>
     <head>
+        <style>
+            body {
+                padding-bottom: 350px;
+            }
+
+            #caixa {
+                height: 100px;
+                width: 100px;
+                background-color: aquamarine;
+                border-color: brown;
+                border-radius: 20px;
+                color: blueviolet;
+                /*padding: espaçamento interno*/
+                padding: 35px;
+                /*margin: espaçamento externo*/
+                margin: 10px;
+            }
+            .center {
+                color: blue;
+                text-align: center;
+
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+            }
+            
+        </style>
         <title>Meu primeiro HTML</title>
     </head>
     <body>
@@ -14,13 +42,64 @@
 <!-- Tags inline: tag que se fecha na mesma de abertura -->
 <hr/>
 <h1>Hollow Knight</h1>
-<hr/>
-<img src="img/Key_Art_02_layeredjpg.jpg"width="500px"/>
-<hr/>
-<h1>Hornet</h1>
 
-<hr/>
+<img src="img/Key_Art_02_layeredjpg.jpg"width="300px"/> 
+<img src="img/hhoow.webp"width="300px"/>
+<div id="caixa">
+    <h2>Teste</h2>
+</div>
+<div class="center"> 
+    <h2>Teste</h2>
+    <spam>Testando</spam>
+    <h3>Testando centralizado</h3>
+</div>
 
-<img src="img/hhoow.webp"width="500px"/>
+<div class="center">
+
+<p>Parágrafo</p>
+</div>
+<!--Lista ordenada-->
+<h4>Gits Básicos</h4>
+<ol>
+    <li>
+        <pre>git status</pre>
+    </li>
+    <li>
+        <pre>git commit</pre>
+    </li>
+    <li>
+        <pre>git add .</pre>
+    </li>
+    <li>
+        ]<pre>git commit -m "mensagem"</pre>
+    </li>
+    </ol>
+    <!--Lista não ordenada-->
+    <h4>Pastelão</h4>
+    <ul>
+<li>Pastelaria</li>
+    </ul>
+</ul>
+</ol>
+<!--Tabela-->
+<h3>Filmes favoritos</h3>
+<table>
+    <!--Primeira linha da tabela são colunas th (table head)-->
+    <tr>
+    <tr>
+        <tr>
+            <th>Nome</th>
+            <th>Gênero</th>
+            <th>Estrelas</th>
+        </tr>
+    </tr>
+    <td>O problema dos 3 copos</td>
+    <td>7.7</td>
+    </tr>
+    <tr>
+        <td>Matador de aluguel</td>
+        <td>6.2</td>
+    </tr>
+</table>
 </body>
 </html>
